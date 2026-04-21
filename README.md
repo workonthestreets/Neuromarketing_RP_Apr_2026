@@ -14,10 +14,8 @@
 
 ## Quick Status
 
-- **Best R²:** 23.3% (v19)
-- **Started at:** 5.3% (v1)
-- **Target:** 25-30% before launching product
-- **Next step:** Migrate to Cursor+RunPod, then run ensemble of 5 models
+See [`STATUS.md`](STATUS.md) for the current best model, numbers, and next step.
+Don't duplicate those numbers here — they go stale immediately.
 
 ## Data location
 
@@ -37,10 +35,15 @@ workspace at `/workspace/neuroscore/` on our training pod and are excluded via
 Secrets (e.g. `youtube_cookies.txt`) are also kept only on the pod and must
 never be committed.
 
-To reproduce locally, rehydrate caches/features by re-running the extraction
-scripts against the Algonauts 2025 dataset, or rsync from the pod:
+### Reproducing the data
 
-```
-rsync -av -e "ssh -p <PORT> -i <KEY>" \
-    root@<POD_IP>:/workspace/neuroscore/{models,features}/ ./
-```
+Feature extraction requires a GPU; run on RunPod (or equivalent).
+
+1. Download Algonauts 2025 Movie10 stimuli + fMRI from
+   https://algonauts.csail.mit.edu/ (registration required).
+2. Place under `/workspace/neuroscore/algonauts_2025.competitors/`.
+3. Extract features: `python extract_text_features.py`
+4. Train best model: `python train_v21_with_text.py`
+
+Trained checkpoints land in `/workspace/neuroscore/models/`.
+Do not commit any of the above — they are `.gitignore`d.
