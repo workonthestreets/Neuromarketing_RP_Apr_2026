@@ -1,0 +1,26 @@
+{
+  "neuroscore": 50.0,
+  "timeline": [
+    {
+      "time": 11.92,
+      "score": 100.0
+    },
+    {
+      "time": 13.41,
+      "score": 0.0
+    }
+  ],
+  "peaks": [
+    {
+      "time": 11.92,
+      "score": 100.0
+    },
+    {
+      "time": 13.41,
+      "score": 0.0
+    }
+  ],
+  "dead_zones": [],
+  "duration_seconds": 13.41,
+  "n_samples": 2
+}

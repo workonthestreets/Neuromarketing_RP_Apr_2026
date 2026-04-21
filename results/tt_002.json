@@ -1,0 +1,9 @@
+{
+  "neuroscore": 0.0,
+  "timeline": [],
+  "peaks": [],
+  "dead_zones": [],
+  "duration_seconds": 0.0,
+  "n_samples": 0,
+  "error": "insufficient valid predictions"
+}

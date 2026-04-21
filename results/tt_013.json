@@ -1,0 +1,66 @@
+{
+  "neuroscore": NaN,
+  "timeline": [
+    {
+      "time": 11.92,
+      "score": NaN
+    },
+    {
+      "time": 13.41,
+      "score": NaN
+    },
+    {
+      "time": 14.9,
+      "score": NaN
+    },
+    {
+      "time": 16.39,
+      "score": NaN
+    },
+    {
+      "time": 17.88,
+      "score": NaN
+    },
+    {
+      "time": 19.37,
+      "score": NaN
+    },
+    {
+      "time": 20.86,
+      "score": NaN
+    },
+    {
+      "time": 22.35,
+      "score": NaN
+    },
+    {
+      "time": 23.84,
+      "score": NaN
+    },
+    {
+      "time": 25.33,
+      "score": NaN
+    },
+    {
+      "time": 26.82,
+      "score": NaN
+    }
+  ],
+  "peaks": [
+    {
+      "time": 26.82,
+      "score": NaN
+    },
+    {
+      "time": 25.33,
+      "score": NaN
+    },
+    {
+      "time": 23.84,
+      "score": NaN
+    }
+  ],
+  "dead_zones": [],
+  "duration_seconds": 26.82,
+  "n_samples": 11
+}

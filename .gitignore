@@ -1,0 +1,48 @@
+# Large data, model weights, and caches live on RunPod, not GitHub.
+# See README.md → "Data location" for details.
+
+# Feature caches and extracted features
+cache/
+features/
+
+# Trained model weights
+models/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+
+# External repos cloned into the workspace
+algonauts_2025.competitors/
+
+# Scraped ad data and media
+tiktok_ads/
+*.mp4
+*.mov
+*.mkv
+*.webm
+
+# Temp / scratch
+tmp_inference/
+tmp/
+*.tmp
+
+# Secrets — cookies, tokens, auth
+*cookies*.txt
+*.env
+.env*
+!.env.example
+credentials.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
